@@ -18,7 +18,7 @@ from pycparser.ply.yacc import default_lr
 service_map: dict[str, BaseTranslator] = {
     "Google": GoogleTranslator,
    # "Zhipu": ZhipuTranslator,
-   # "Gemini": GeminiTranslator,
+   "Gemini": GeminiTranslator,
 }
 lang_map = {
     "Chinese": "zh",
