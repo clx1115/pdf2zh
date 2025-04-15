@@ -1,0 +1,14 @@
+/node_modules
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/src/*.log
+/.idea
+/.vscode
+composer.lock

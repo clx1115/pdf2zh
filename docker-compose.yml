@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  pdf2zh:
+    container_name: pdf2zh
+    hostname: pdf2zh
+    restart: always
+    image: python:3.10
+    ports:
+      - "9870:9870"
+    volumes:
+      - ./src:/app:rw
+    command:
+      - /bin/bash
+      - -c
+      - >
+        echo "Building build..."
+        && tail -f /dev/null
+networks:
+  default:
+    external: true
+    name: devops
